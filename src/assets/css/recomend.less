@@ -1,0 +1,266 @@
+.recommend {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 125px;
+    bottom: 0;
+    overflow: hidden;
+    overflow-y: auto;
+
+    .recommend-menu {
+        width        : 100%;
+        display      : flex;
+        border-bottom: 1px solid #eee;
+
+        .recommend-item {
+            flex      : 1;
+            text-align: center;
+            padding   : 5px 0 15px 0;
+
+            img {
+                width : 45%;
+                height: auto;
+            }
+
+            h4 {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .title {
+        font-size   : 15px;
+        padding-left: 10px;
+        border-left : 2px solid #d23023;
+        margin      : 15px 0 15px 0;
+    }
+
+    .list-wrapper {
+        display        : flex;
+        width          : 100%;
+        flex-wrap      : wrap;
+        justify-content: space-between;
+        flex           : 1;
+
+        .van-card {
+            width           : 100%;
+            position        : relative;
+            box-sizing      : border-box;
+            padding         : 5px;
+            color           : grey;
+            font-size       : 18px;
+            background-color: #fafafa;
+
+            .van-card__thumb {
+                width       : 70px;
+                height      : 70px;
+                margin-right: 10px;
+            }
+
+            .van-card__content {
+                min-height: 70px;
+
+                .van-card__title {
+                    width        : 200px;
+                    margin-top   : 20px;
+                    line-height  : 30px;
+                    white-space  : nowrap;
+                    overflow     : hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+
+            .play-btn {
+                width        : 36px;
+                position     : absolute;
+                right        : 15px;
+                bottom       : 20px;
+                border-radius: 50%;
+                border       : 1px solid grey;
+            }
+        }
+
+        .item-1-3,
+        .recommend .list-wrapper .item-1-2,
+        .recommend .list-wrapper .item-1 {
+            display      : inline-block;
+            margin-bottom: 10px;
+            height       : auto;
+        }
+
+        .item-1-3 {
+            width: 33%;
+        }
+
+        .item-1-2 {
+            width: 49%;
+        }
+
+        img {
+            width : 100%;
+            height: auto;
+        }
+
+        .item-1 {
+            width: 100%;
+        }
+
+        .item-title {
+            font-size     : 14px;
+            line-height   : 1.3em;
+            letter-spacing: 1px;
+            color         : black;
+            overflow      : hidden;
+        }
+
+    }
+
+    .recommend-newsongs .item-title {
+        width           : 100%;
+        white-space     : nowrap;
+        text-overflow   : ellipsis;
+        -o-text-overflow: ellipsis;
+        overflow        : hidden;
+
+        .artists-name {
+            font-size       : 10px;
+            color           : #3d3d3d;
+            width           : 100%;
+            white-space     : nowrap;
+            text-overflow   : ellipsis;
+            -o-text-overflow: ellipsis;
+            overflow        : hidden;
+        }
+    }
+}
+
+
+
+// .recommend {
+//     overflow: hidden;
+// }
+
+// .recommend .recommend-menu {
+//     width        : 100%;
+//     display      : flex;
+//     border-bottom: 1px solid #eee;
+// }
+
+// .recommend .recommend-menu .recommend-item {
+//     flex      : 1;
+//     text-align: center;
+//     padding   : 5px 0 15px 0;
+// }
+
+// .recommend .recommend-menu .recommend-item img {
+//     width : 45%;
+//     height: auto;
+// }
+
+// .recommend .recommend-menu .recommend-item h4 {
+//     font-size: 12px;
+// }
+
+// .recommend .title {
+//     font-size   : 15px;
+//     padding-left: 10px;
+//     border-left : 2px solid #d23023;
+//     margin      : 15px 0 15px 0;
+// }
+
+// .recommend .list-wrapper {
+//     display        : flex;
+//     width          : 100%;
+//     flex-wrap      : wrap;
+//     justify-content: space-between;
+//     flex           : 1;
+
+//     .van-card {
+//         width           : 100%;
+//         position        : relative;
+//         box-sizing      : border-box;
+//         padding         : 5px;
+//         color           : grey;
+//         font-size       : 18px;
+//         background-color: #fafafa;
+
+//         .van-card__thumb {
+//             width       : 70px;
+//             height      : 70px;
+//             margin-right: 10px;
+//         }
+
+//         .van-card__content {
+//             min-height: 70px;
+
+//             .van-card__title {
+//                 width        : 200px;
+//                 margin-top   : 20px;
+//                 line-height  : 30px;
+//                 white-space  : nowrap;
+//                 overflow     : hidden;
+//                 text-overflow: ellipsis;
+//             }
+//         }
+
+//         .play-btn {
+//             width        : 36px;
+//             position     : absolute;
+//             right        : 15px;
+//             bottom       : 20px;
+//             border-radius: 50%;
+//             border       : 1px solid grey;
+//         }
+//     }
+// }
+
+// .recommend .list-wrapper .item-1-3,
+// .recommend .list-wrapper .item-1-2,
+// .recommend .list-wrapper .item-1 {
+//     display      : inline-block;
+//     margin-bottom: 10px;
+//     height       : auto;
+// }
+
+// .recommend .list-wrapper .item-1-3 {
+//     width: 33%;
+// }
+
+// .recommend .list-wrapper .item-1-2 {
+//     width: 49%;
+// }
+
+// .recommend .list-wrapper .item-1 {
+//     width: 100%;
+// }
+
+// .recommend .list-wrapper img {
+//     width : 100%;
+//     height: auto;
+// }
+
+// .recommend .list-wrapper .item-title {
+//     font-size     : 14px;
+//     line-height   : 1.3em;
+//     letter-spacing: 1px;
+//     color         : black;
+//     overflow      : hidden;
+// }
+
+// .recommend .recommend-newsongs .item-title {
+//     width           : 100%;
+//     white-space     : nowrap;
+//     text-overflow   : ellipsis;
+//     -o-text-overflow: ellipsis;
+//     overflow        : hidden;
+// }
+
+// .recommend .recommend-newsongs .artists-name {
+//     font-size       : 10px;
+//     color           : #3d3d3d;
+//     width           : 100%;
+//     white-space     : nowrap;
+//     text-overflow   : ellipsis;
+//     -o-text-overflow: ellipsis;
+//     overflow        : hidden;
+// }

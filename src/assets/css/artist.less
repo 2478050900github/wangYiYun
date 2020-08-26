@@ -1,0 +1,85 @@
+#singer {
+    padding-bottom: 50px;
+
+    .van-nav-bar {
+        position: fixed;
+        top     : 0;
+        left    : 0;
+        right   : 0;
+    }
+
+    .singer-pic {
+        position: fixed;
+        top     : 46px;
+        left    : 0;
+        right   : 0;
+        height  : 200px;
+        overflow: hidden;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .list-box {
+        position  : fixed;
+        top       : 250px;
+        left      : 0;
+        right     : 0;
+        height    : 420px;
+        overflow-y: auto;
+
+        .title {
+            padding      : 15px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .item {
+            display: flex;
+            height : 60px;
+
+            .sequence {
+                width     : 30px;
+                text-align: center;
+                color     : #666;
+
+                span {
+                    font-size  : 14px;
+                    line-height: 60px;
+                }
+            }
+
+            .song-msg {
+                flex         : 1;
+                position     : relative;
+                overflow-x   : hidden;
+                border-bottom: 1px solid #e8e8e8;
+
+                .song-name {
+                    font-size: 16px;
+                    padding  : 10px 0;
+                    width    : 90%;
+                }
+
+                .description {
+                    font-size: 12px;
+                    color    : #666;
+                    width    : 90%;
+                }
+
+                .icon {
+                    position : absolute;
+                    right    : 10px;
+                    top      : 20px;
+                    font-size: 20px;
+                    color    : #666;
+                }
+            }
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    // 隐藏滚动条
+    display: none;
+}

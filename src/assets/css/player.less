@@ -1,0 +1,198 @@
+.play {
+
+    .normal-player {
+        position  : fixed;
+        top       : 0;
+        left      : 0;
+        bottom    : 0;
+        right     : 0;
+        overflow  : hidden;
+        background: #c5c6c7;
+
+        .song-main {
+
+            .middle-box {
+                height  : 410px;
+                position: relative;
+
+                @keyframes turn {
+                    0% {
+                        -webkit-transform: rotate(0deg);
+                    }
+
+                    100% {
+                        -webkit-transform: rotate(360deg);
+                    }
+                }
+
+                .pic-box {
+                    margin       : 60px 100px;
+                    width        : 200px;
+                    overflow     : hidden;
+                    border-radius: 50%;
+                }
+
+                .action-list {
+                    position: fixed;
+                    bottom  : 125px;
+                    left    : 0;
+                    right   : 0;
+
+                    .icon {
+                        text-align : center;
+                        width      : 60px;
+                        margin-left: 25px;
+                        font-size  : 26px;
+                    }
+                }
+
+                .action-list>div {
+                    float: left;
+                }
+            }
+
+            .showLrc-box {
+                position   : absolute;
+                right      : 0;
+                left       : 0;
+                top        : 50px;
+                height     : 440px;
+                text-align : center;
+                font-size  : 18px;
+                line-height: 30px;
+                overflow-y : auto;
+                box-sizing : border-box;
+                padding    : 0 18px;
+            }
+        }
+
+        .play-btn-box {
+            position: fixed;
+            left    : 0;
+            right   : 0;
+            bottom  : 10px;
+
+            .progress-bar {
+                height: 60px;
+
+                .stime {
+                    width      : 60px;
+                    line-height: 60px;
+                    font-size  : 20px;
+                    text-align : center;
+                }
+
+                .progress-box {
+                    width      : 230px;
+                    height     : 50px;
+                    margin-left: 8px;
+
+                    .progress {
+                        border-radius: 10px;
+                        margin-top   : 18px;
+                        height       : 20px;
+                        background   : gray;
+                        position     : relative;
+
+                        .cur-progress {
+                            border-radius: 10px 0 0 10px;
+                            height       : 20px;
+                            width        : 30px;
+                            background   : #e00b36;
+                        }
+
+                        .idot {
+                            position     : absolute;
+                            top          : 0;
+                            width        : 20px;
+                            height       : 20px;
+                            border-radius: 50%;
+                            background   : white;
+                        }
+                    }
+                }
+            }
+
+            .play-btns {
+
+                .icon {
+                    color    : #666666;
+                    margin   : 10px 0;
+                    width    : 60px;
+                    font-size: 30px;
+                }
+
+                .play-style {
+                    text-align: center;
+                }
+
+                .mid {
+                    margin-left: 40px;
+
+                    .icon {
+                        font-weight: bolder;
+                        color      : #e00b36;
+                        margin-top : 5px;
+                        font-size  : 50px;
+                    }
+
+                    .pn {
+                        margin-top: 8px;
+                        width     : 40px;
+                        height    : 40px;
+                        text-align: center;
+
+                        .icon {
+                            font-size  : 40px;
+                            margin-left: -10px;
+                        }
+                    }
+                }
+
+                .mid>div {
+                    border       : 1px solid lightcyan;
+                    border-radius: 50%;
+                    float        : left;
+                    margin-right : 10px;
+                    width        : 55px;
+                    height       : 55px;
+                }
+            }
+        }
+
+    }
+
+    .popup-box {
+        background: yellow;
+    }
+
+    .songsList-box {
+        padding    : 20px;
+        font-size  : 20px;
+        height     : 300px;
+        line-height: 40px;
+        background : whitesmoke;
+
+        .content {
+            font-size : 16px;
+            height    : 280px;
+            overflow-y: auto;
+            color     : gray;
+
+            .song-list {
+                width        : 100%;
+                display      : inline-block;
+                border-bottom: 1px solid lightgray;
+
+                h1 {
+                    max-width: 300px;
+                }
+
+                .icon {
+                    margin-top: 8px;
+                    font-size : 25px;
+                }
+            }
+        }
+    }
+}

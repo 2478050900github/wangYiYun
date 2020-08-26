@@ -1,0 +1,1 @@
+#top{position:fixed;top:130px;left:0;right:0;bottom:0;overflow-y:auto}#top .top-list{display:flex}#top .pic-box{width:35%}#top .pic-box img{width:100%;height:auto;padding:0;margin:0}#top .top-songs{flex:1;height:auto;overflow-x:hidden}#top .top-songs ul{margin-left:8%;padding:5% 0}#top .top-songs ul li{padding:4% 0;font-size:14px;color:#a9a9a9}

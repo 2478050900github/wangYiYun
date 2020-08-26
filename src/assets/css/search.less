@@ -1,0 +1,191 @@
+.search {
+    position: fixed;
+    top     : 0;
+    left    : 0;
+    right   : 0;
+    bottom  : 0;
+
+    .header {
+        position  : fixed;
+        top       : 0;
+        left      : 0;
+        right     : 0;
+        height    : 60px;
+        padding   : 0 15px;
+        box-sizing: border-box;
+        background: #d23023;
+
+        .search-box {
+            width   : 80%;
+            position: relative;
+
+            .sch {
+                position: absolute;
+                top     : 6px;
+                right   : 6px;
+                width   : 30px;
+                height  : 30px;
+
+                .icon {
+                    font-size: 30px;
+                    color    : grey;
+                }
+            }
+
+            input {
+                width        : 100%;
+                height       : 36px;
+                line-height  : 20px;
+                font-size    : 16px;
+                border-radius: 20px;
+                padding      : 0 40px 0 20px;
+                box-sizing   : border-box;
+            }
+        }
+
+        .back {
+            color      : #fff;
+            padding    : 0 5px;
+            font-size  : 20px;
+            line-height: 60px;
+        }
+    }
+
+    .menutab {
+        position  : fixed;
+        top       : 60px;
+        left      : 0;
+        right     : 0;
+        bottom    : 0;
+        background: rgba(255, 255, 255);
+
+        .van-tabs--line .van-tabs__wrap {
+            height: 50px;
+        }
+
+        .van-tabs {
+
+            .van-tabs__nav {
+                position: fixed;
+                top     : 60px;
+                left    : 0;
+                right   : 0;
+                height  : 40px;
+            }
+        }
+
+        .van-tab--active {
+            color: #d23023;
+        }
+
+        span {
+            text-align : center;
+            padding    : 12px 0;
+            font-size  : 18px;
+            line-height: 40px;
+        }
+
+        .list-box {
+            position  : fixed;
+            top       : 120px;
+            left      : 0;
+            right     : 0;
+            bottom    : 0;
+            overflow-y: auto;
+
+            .song-list {
+                padding: 15px 20px 0;
+
+                .item {
+                    height       : 60px;
+                    border-bottom: 1px solid #eee;
+
+                    .artist-pic {
+                        width : 60px;
+                        height: 60px;
+
+                        img {
+                            width : 50px;
+                            height: 50px;
+                            margin: 5px 5px;
+                        }
+                    }
+
+                    .song-msg {
+                        position    : relative;
+                        padding-left: 5px;
+                        overflow    : hidden;
+
+                        .song-name {
+                            font-size: 16px;
+                            padding  : 10px 0;
+                            width    : 80%;
+                        }
+
+                        .description {
+                            font-size: 14px;
+                            color    : #666;
+                            width    : 80%;
+                        }
+
+                        .icon {
+                            position     : absolute;
+                            right        : 10px;
+                            top          : 0;
+                            padding      : 2px;
+                            font-size    : 36px;
+                            color        : #666;
+                            border-radius: 50%;
+                            border       : 1px solid #eee;
+                        }
+                    }
+
+
+                }
+            }
+
+            .artist-list {
+                padding      : 15px 20px 0;
+                margin-bottom: 10px;
+
+                .item {
+                    height       : 80px;
+                    color        : gray;
+                    border-bottom: 1px solid #eee;
+                    position     : relative;
+
+                    .artist-pic {
+                        width : 60px;
+                        height: 60px;
+                    }
+
+                    .song-msg {
+                        height     : 60px;
+                        font-size  : 22px;
+                        margin-left: 20px;
+                        line-height: 60px;
+                    }
+
+                    .van-icon {
+                        position  : absolute;
+                        right     : 10px;
+                        top       : 10px;
+                        font-size : 36px;
+                        margin-top: 15px;
+                        color     : lightgray;
+                    }
+                }
+            }
+        }
+    }
+
+    .checkStyle {
+        color        : #d23023;
+        border-bottom: 2px solid #d23023;
+    }
+
+    .header>div {
+        line-height: 60px;
+        text-align : center;
+    }
+}
